@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0E0E0E;
+}
+
+#mainWrapper {
+  position: relative;
+  background-color: #DAD7BA;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 600px;
+  margin: 100px auto 0;
+  min-height: 500px;
+  padding: 10px;
+  box-shadow: 0 0 18px black;
+}
+
+#pin {
+  position: absolute;
+  top: -50px;
+  right: -25px;
+  width: 150px;
+}
+
+#wrapper-input {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#input {
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#lista {
+  list-style: none;
+  padding: 20px;
+}
+
+li > * {
+  display: inline-block;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+  padding-left: 5px;
+}

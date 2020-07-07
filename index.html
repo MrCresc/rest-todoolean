@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rest-todoolean</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="mainWrapper">
+      <img id="pin" src="img/pin.png" alt="">
+      <div id="wrapper-input">
+        <input id="input" type="text" name="" value="" placeholder="Digita la nota da aggiungere">
+        <button id="add" type="button" name="button">Aggiungi</button>
+      </div>
+      <h1>ToDo List <span id="counter"></span></h1>
+      <ul id="lista">
+
+      </ul>
+    </div>
+
+    <script id="list-item-template" type="text/x-handlebars-template">
+      <li idAttribute="{{id}}">
+        <h2>{{text}}</h2>
+        <i class="fas fa-trash-alt delete"></i>
+      </li>
+    </script>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
